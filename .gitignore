@@ -1,0 +1,5 @@
+*.amltmp
+*.amlignore
+*.log
+*__pycache__*
+utils/config.json

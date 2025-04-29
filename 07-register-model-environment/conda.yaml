@@ -1,0 +1,19 @@
+name: diabetes-classify-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - pandas
+      - numpy==1.26.4
+      - scikit-learn
+      - matplotlib
+      - azureml-dataprep[pandas]
+      - mlflow
+      - azureml-mlflow
+      - azureml-core
+      - azure-ai-ml
+      - azure-identity
+      - azureml-inference-server-http
+      - azureml.fsspec
