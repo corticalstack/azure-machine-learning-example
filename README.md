@@ -1,6 +1,6 @@
 # 🤖 Azure Machine Learning Diabetes Demo
 
-This repository demonstrates features of Azure Machine Learning (AML), including how to build and deploy low and pro code machine learning models for diabetes prediction. It provides a comprehensive, step-by-step guide through the entire machine learning lifecycle, from workspace creation to model traing, evaluation, deployment, and developing ML use cases with MLOps considerations in mind.
+This repository demonstrates features of Azure Machine Learning (AML), including how to build and deploy low and pro code machine learning models for diabetes prediction. It provides a comprehensive, step-by-step guide through the entire machine learning lifecycle, from workspace creation to model training, evaluation, deployment, and developing ML use cases with MLOps considerations in mind.
 
 ## 🔍 Introduction to Azure Machine Learning
 
