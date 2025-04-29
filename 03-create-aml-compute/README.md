@@ -1,6 +1,6 @@
-# Setting Up Compute Resources for Azure Machine Learning
+# Setting Up Compute Target Resources for Azure Machine Learning
 
-This guide walks you through setting up the necessary compute resources for training your diabetes prediction model in Azure Machine Learning.
+This guide walks you through setting up the necessary compute target resources for working with and training our diabetes prediction model in Azure Machine Learning.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ After creating the managed identity, you need to enable it to work with the mach
 
 ## Creating a Compute Cluster
 
-Now we are ready to create a compute cluster, which is automatically scalable compute to train our diabetes model.
+Now we are ready to create a compute cluster, which is automatically scalable, reusable compute we can use to train our diabetes model.
 
 1. Navigate to [Azure Machine Learning studio](https://ml.azure.com)
 2. Sign in with the same account used to create the AML workspace
@@ -116,6 +116,5 @@ Regardless of which access method you choose:
 
 This environment has all the necessary packages for working with Azure Machine Learning and this diabetes prediction use case.
 
-## Next Steps
-
-Now that your compute resources are set up, you can proceed to [set up your dataset](../03-create-the-dataset/README.md) for the diabetes prediction project.
+## Resources
+[AML Compute Targets](https://learn.microsoft.com/en-us/azure/machine-learning/concept-compute-target?view=azureml-api-2)

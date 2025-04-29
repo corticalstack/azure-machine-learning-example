@@ -16,7 +16,7 @@ Complete the following experiment set-up and run steps using the Azure Machine L
 
 ![New Automated ML Job](../00-assets/images/auto_ml_1.png "New Automated ML Job")
 
-3. Provide an experiment name, a descriptive name for the diabetes classification experiment, and any tags.
+3. Provide an experiment name, a description for the diabetes classification experiment, and any tags.
 
 ![New Automated ML Job](../00-assets/images/auto_ml_2.png "New Automated ML Job")
 

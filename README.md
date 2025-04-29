@@ -30,6 +30,8 @@ To run the examples in this repository, you'll need:
 3. Python 3.10 or later
 4. Azure Machine Learning SDK v2 for Python
 
+**Important:** This repo uses Azure Machine Learning SDK v2, not the older v1. While many examples and documentation for v1 still exist on the internet, v2 is recommended for new projects, offering an improved and more consistent API design.
+
 ## 📚 Examples
 
 🧮 [01-create-aml-workspace](./01-create-aml-workspace/README.md): Step-by-step instructions for creating an AML workspace in the Azure portal.

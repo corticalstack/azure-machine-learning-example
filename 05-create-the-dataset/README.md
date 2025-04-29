@@ -2,27 +2,27 @@
 
 ## Introduction to Data in Azure Machine Learning
 
-Azure Machine Learning (AML) provides a framework for working with data throughout the machine learning lifecycle. It offers features to store, access, prepare, and monitor data.
+AML provides a framework for working with data throughout the machine learning lifecycle. It offers features to store, access, prepare, and monitor data.
 
 ## Understanding Data Concepts
 
 ### Data Stores
 
-A datastore in Azure Machine Learning serves as a reference to an existing Azure storage account. Datastores offer these key benefits:
+A datastore in AML serves as a reference to an existing Azure storage account. Datastores offer these key benefits:
 
 - A common, easy-to-use API that interacts with different storage types (e.g., blobs and files)
 - Easy discovery and sharing of datastores in team collaborations
 - For credential-based access, an Azure Machine Learning datastore secures connection information, eliminating the need to expose sensitive information in scripts
 
-Each Azure Machine Learning workspace has default datastores that are automatically created:
-- workspaceblobstore: Stores data uploads, job code snapshots, and pipeline data cache
-- workspaceworkingdirectory: Stores data for notebooks, compute instances, and prompt flow
-- workspacefilestore: Alternative container for data upload
-- workspaceartifactstore: Storage for assets such as metrics, models, and components
+Each AML workspace has default datastores that are automatically created:
+- **workspaceblobstore**: Stores data uploads, job code snapshots, and pipeline data cache
+- **workspaceworkingdirectory**: Stores data for notebooks, compute instances, and prompt flow
+- **workspacefilestore**: Alternative container for data upload
+- **workspaceartifactstore**: Storage for assets such as metrics, models, and components
 
 ### Data Assets
 
-Data assets in Azure Machine Learning are references to data sources that can be used in machine learning workflows. They provide a way to:
+Data assets in AML are references to data sources that can be used in machine learning workflows. They provide a way to:
 
 - Track and version data used in experiments
 - Ensure reproducibility of machine learning workflows
@@ -45,7 +45,7 @@ Data connections simplify the process of working with external data sources whil
 ## Prerequisites for working with our sample dataset
 
 - An Azure Machine Learning workspace (created in an [earlier step](../01-create-aml-workspace/README.md))
-- Compute resources (set up in in an [earlier step](../02-create-aml-compute/README.md))
+- Compute resources (set up in in an [earlier step](../03-create-aml-compute/README.md))
 
 ## Understanding the Diabetes Dataset
 
@@ -92,21 +92,14 @@ By default, this will:
 1. Use the `diabetes.csv` file in the `00-assets/data` directory
 2. Create a new data asset version named `diabetes-diagnostics` in your Azure ML workspace
 
-### Customizing Dataset Registration
-
-You can customize the dataset registration with command-line options:
-
-```bash
-python create_aml_dataset.py --data_path PATH --dataset_name NAME --dataset_description DESC
-```
-
 ### How the Script Works
 
 The script performs the following operations:
 1. Connects to your Azure ML workspace using the configuration file `config.json` in the root of your compute instance
 2. Validates the data file exists
-3. Creates a data asset in your AML workspace with the specified name and description
-4. Registers the data asset, making it available for training jobs
+3. Creates a data asset in your AML workspace with the specified name and description, making it available for tasks like exploratory data analysis and model training
+
+![Diabetes dataset](../00-assets/images/aml_dataset_diabetes_diagnostics.png "Diabetes dataset")
 
 ## Versioning Data Assets
 

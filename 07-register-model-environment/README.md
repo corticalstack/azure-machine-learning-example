@@ -1,6 +1,6 @@
 # Azure Machine Learning Environments
 
-This guide explains Azure Machine Learning environments and how to register a custom environment using a conda YAML file.
+Here we explain what an Azure Machine Learning environment is, and how to register a custom environment with an AML workspace using a conda YAML file.
 
 ## What is an Azure Machine Learning Environment?
 
@@ -52,3 +52,7 @@ To register this environment with your Azure ML workspace, run the helper script
 # Register with default parameters
 python register_aml_environment_from_yaml.py
 ```
+
+The registered environment can be viewed in AML studio:
+
+![Registered AML environment](../00-assets/images/aml_environment.png)

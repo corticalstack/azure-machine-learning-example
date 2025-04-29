@@ -77,6 +77,8 @@ python create_online_deployment.py \
 - **instance_count**: Number of instances for scaling
 - **traffic_allocation**: Percentage of traffic to route to this deployment
 
+![AML model endpoint](../00-assets/images/aml_model_endpoint.png "AML model endpoint")
+
 ## Inference Process
 
 When a request is sent to the endpoint:
@@ -84,7 +86,7 @@ When a request is sent to the endpoint:
 1. The endpoint authenticates the request
 2. Traffic is routed to the appropriate deployment based on traffic allocation
 3. The deployment loads the model and executes the scoring script
-4. The scoring script processes the input data and returns predictions
+4. The scoring script processes the input data, invokes the model prediction with the input, and returns a prediction
 
 ## Monitoring and Management
 

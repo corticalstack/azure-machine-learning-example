@@ -33,5 +33,15 @@ Diabetic prediction: ["not-diabetic"]
 ```
 
 The prediction will be one of two possible values:
-- `"not-diabetic"`: The model predicts the patient is not diabetic
-- `"diabetic"`: The model predicts the patient is diabetic
+- `not-diabetic`: The model predicts the patient is not diabetic
+- `diabetic`: The model predicts the patient is diabetic
+
+Alternatively, you can use cURL to consume the endpoint directly from the command line:
+
+```bash
+curl -X POST \
+https://diabetes-classify.francecentral.inference.ml.azure.com/score \
+-H 'Content-Type: application/json' \
+-H 'Accept: application/json' \
+-H 'Authorization: Bearer <your endpoint key>' \
+-d @diabetes-classify-request.json

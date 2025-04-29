@@ -28,13 +28,13 @@ Navigate to the [Azure Portal](https://portal.azure.com/) and sign in with your 
 
 ### 2. Inbound Network Configuration
 
-For simplicity of demonstration, we select `All networks`. Highly recommended production workspace deployments have public access disabled.
+For simplicity of demonstration, we select `All networks`. Highly recommended to configure production workspace deployments with public access disabled.
 
 ![Create a resource button in Azure portal](../00-assets/images/create-aml-workspace-2.png "Create a resource")
 
 ### 3. Outbound Network Configuration
 
-Again, for demo, we enable `Public`.
+Again, for demo only, we enable `Public`.
 
 ![Search for Machine Learning service](../00-assets/images/create-aml-workspace-3.png "Search for Machine Learning")
 
@@ -43,7 +43,3 @@ Again, for demo, we enable `Public`.
 After clicking through the remaining tabs, click the `Create` button to start the process of creating the new Machine Learning workspace. Deployment will take a few minutes to complete. Once deployment is successful, you'll see a notification, and you can click `Go to resource` to access the new Azure Machine Learning workspace.
 
 ![Deployment complete notification](../00-assets/images/create-aml-workspace-7.png "Deployment complete")
-
-## Next Steps
-
-After creating your Azure Machine Learning workspace, proceed to [Create compute resources](../02-create-aml-compute/README.md) for the compute needed to build the assets needed for your diabetes prediction model.

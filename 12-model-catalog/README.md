@@ -2,6 +2,8 @@
 
 The model catalog in Azure Machine Learning studio is a hub for discovering and using a wide range of models to build Generative AI applications, featuring hundreds of models from providers including Azure OpenAI, Mistral, Meta, Cohere, NVIDIA, and Hugging Face.
 
+![AML model catelog](../00-assets/images/aml_model_catelog.png "AML model catelog")
+
 ## Overview
 
 Models in the catalog are organized by Collections, with three primary types:
