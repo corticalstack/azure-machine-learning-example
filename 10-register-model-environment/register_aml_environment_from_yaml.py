@@ -7,7 +7,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from azure.ai.ml import MLClient
 from azure.ai.ml.entities import Environment
 from azure.identity import DefaultAzureCredential
-from utils.azureml_client import get_ml_client_from_config
 
 # Configure logging
 logging.basicConfig(
@@ -20,6 +19,25 @@ logger = logging.getLogger(__name__)
 logging.getLogger("azure").setLevel(logging.ERROR)
 logging.getLogger("azure.core.pipeline.policies.http_logging_policy").setLevel(logging.ERROR)
 
+def get_ml_client() -> MLClient:
+    """
+    Initialize and return Azure ML client using config file.
+    
+    Returns:
+        MLClient: Authenticated Azure ML client
+    
+    Raises:
+        Exception: If client initialization fails
+    """
+    try:
+        credential = DefaultAzureCredential()
+        ml_client = MLClient.from_config(credential)
+        logger.info(f"Successfully connected to Azure ML workspace: {ml_client.workspace_name}")
+        return ml_client
+    except Exception as e:
+        logger.error(f"Failed to initialize ML Client: {str(e)}")
+        raise
+                     
 def parse_args():
     """Parse command line arguments for environment registration."""
     parser = argparse.ArgumentParser(description='Register an Azure ML Environment from a conda YAML file')
@@ -52,7 +70,7 @@ def register_environment(args):
     try:
         # Connect to the workspace
         logger.info("Connecting to Azure ML workspace...")
-        ml_client = get_ml_client_from_config()
+        ml_client = get_ml_client()
         logger.info(f"Connected to workspace: {ml_client.workspace_name}")
         
         # Resolve conda file path
