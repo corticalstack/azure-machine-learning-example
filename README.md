@@ -36,31 +36,33 @@ To run the examples in this repository, you'll need:
 
 🧮 [01-create-aml-workspace](./01-create-aml-workspace/README.md): Step-by-step instructions for creating an AML workspace in the Azure portal.
 
-🧮 [02-automated-ml](./02-automated-ml/README.md): A walkthrough of creating an automated machine learning job for diabetes classification using AML.
+🧮 [02-model-catalog](./02-model-catalog/README.md): Intro to the model catalog in AML.
 
-🧮 [03-create-aml-compute](./03-create-aml-compute/README.md): Guide for setting up compute resources in AML.
+🧮 [03-connections](./03-connections/README.md): Brief intro to connections in AML.
 
-🧮 [04-git-integration](./04-git-integration/README.md): Instructions for integrating Git repositories with AML.
+🧮 [04-promptflow](./04-promptflow/README.md): Brief intro to promptflow.
 
-🧮 [05-create-the-dataset](./05-create-the-dataset/README.md): Guide to working with data in AML, including registering the diabetes dataset.
+🧮 [05-automated-ml](./05-automated-ml/README.md): A walkthrough of creating an automated machine learning job for diabetes classification using AML.
 
-🧮 [06-exploratory-data-analysis](./06-exploratory-data-analysis/README.md): Notebook demonstrating exploratory data analysis on the diabetes dataset.
+🧮 [06-create-aml-compute](./06-create-aml-compute/README.md): Guide for setting up compute resources in AML.
 
-🧮 [07-register-model-environment](./07-register-model-environment/README.md): Instructions for registering model environments in Azure Machine Learning.
+🧮 [07-git-integration](./07-git-integration/README.md): Instructions for integrating Git repositories with AML.
 
-🧮 [08-train-model](./08-train-model/README.md): Guide to training a diabetes prediction model using Azure Machine Learning, with two different approaches (job and pipeline).
+🧮 [08-create-the-dataset](./08-create-the-dataset/README.md): Guide to working with data in AML, including registering the diabetes dataset.
 
-🧮 [09-deploy-model](./09-deploy-model/README.md): Instructions for deploying the trained model as an online endpoint.
+🧮 [09-exploratory-data-analysis](./09-exploratory-data-analysis/README.md): Notebook demonstrating exploratory data analysis on the diabetes dataset.
 
-🧮 [10-inference](./10-inference/README.md): Example inference request to the deployed model to make a diabetes prediction from patient diagnostics.
+🧮 [10-register-model-environment](./10-register-model-environment/README.md): Instructions for registering model environments in Azure Machine Learning.
 
-🧮 [11-connections](./11-connections/README.md): Brief intro to connections in AML.
+🧮 [11-train-model](./11-train-model/README.md): Guide to training a diabetes prediction model using Azure Machine Learning, with two different approaches (job and pipeline).
 
-🧮 [12-model-catalog](./12-model-catalog/README.md): Intro to the model catalog in AML.
+🧮 [12-deploy-model](./12-deploy-model/README.md): Instructions for deploying the trained model as an online endpoint.
 
-🧮 [13-components](./13-components/README.md): Intro to components in AML.
+🧮 [13-inference](./13-inference/README.md): Example inference request to the deployed model to make a diabetes prediction from patient diagnostics.
 
-🧮 [14-mlops-considerations](./14-mlops-considerations/README.md): Some MLOps considerations for machine learning projects.
+🧮 [14-components](./14-components/README.md): Intro to components in AML.
+
+🧮 [15-mlops-considerations](./15-mlops-considerations/README.md): Some MLOps considerations for machine learning projects.
 
 ## 🛠️ Getting Started
 

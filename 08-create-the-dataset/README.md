@@ -45,7 +45,7 @@ Data connections simplify the process of working with external data sources whil
 ## Prerequisites for working with our sample dataset
 
 - An Azure Machine Learning workspace (created in an [earlier step](../01-create-aml-workspace/README.md))
-- Compute resources (set up in in an [earlier step](../03-create-aml-compute/README.md))
+- Compute resources (set up in in an [earlier step](../06-create-aml-compute/README.md))
 
 ## Understanding the Diabetes Dataset
 
