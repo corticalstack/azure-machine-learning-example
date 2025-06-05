@@ -78,7 +78,7 @@ Complete the following experiment set-up and run steps using the Azure Machine L
 
 ![New Automated ML Job](../00-assets/images/auto_ml_12b.png "New Automated ML Job")
 
-15. Configure **validation and test data**. In our test diabetes dataset, we only have 15000 rows, so AutoML defaults to cross-validation with 3 folds. For more inmformation on validation configuration options, including brining your own test dataset, see [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-automated-ml-for-ml-models?view=azureml-api-2#validate-and-test).
+15. Configure **validation and test data**. In our test diabetes dataset, we only have 15000 rows, so AutoML defaults to cross-validation with 3 folds. For more inmformation on validation configuration options, including bringing your own test dataset, see [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-automated-ml-for-ml-models?view=azureml-api-2#validate-and-test).
 
 ![New Automated ML Job](../00-assets/images/auto_ml_validate_test.png "New Automated ML Job")
 
